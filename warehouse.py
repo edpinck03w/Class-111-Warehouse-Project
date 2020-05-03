@@ -175,7 +175,20 @@ def out_ofstock():
     
     print("-" * 70)
 
+def unique_category():
+    size = len(catalog)
+    header("Type of Categories in Warehouse: (" + str(size) + "  Types) ")
 
+    #print(" " * 60)    
+    print('Category'.ljust(15) 
+        )
+    print("-" * 70)
+
+    for item in catalog:
+        mylist = set(map(tuple, item.category))
+        print(mylist)
+    
+    print("-" * 70)
 
 def update_stock(opc):
     display_catalog()
@@ -279,6 +292,8 @@ while(opc != 'x'):
         save_catalog()
     elif (opc == '8'):
         print_log()
+    elif (opc == '9'):
+        unique_category()
 
 
     input("Press Enter to continue...")
