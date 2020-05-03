@@ -13,6 +13,8 @@ def menu():
     print('[4] Update Item Stock Quantity')
     print('[5] Calculate Stock Value')
     print('[6] Remove an Item Completely')
+    print('[7] Register a Sale')
+    print('[8] Display Log')
 
     print(" [x] Exit")
 
